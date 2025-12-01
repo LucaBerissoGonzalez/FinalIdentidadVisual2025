@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(135deg,#f8fafc,#e9eef5);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+}

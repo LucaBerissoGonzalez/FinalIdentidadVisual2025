@@ -1,0 +1,28 @@
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.player-card {
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#Canvas {
+  background: linear-gradient(180deg, #fff, #f1f5f9);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Turn indicator */
+.player-turn {
+  outline: 3px solid #ffd700;
+  transition: outline 0.2s;
+}
