@@ -21,7 +21,6 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Turn indicator */
 .player-turn {
   outline: 3px solid #ffd700;
   transition: outline 0.2s;

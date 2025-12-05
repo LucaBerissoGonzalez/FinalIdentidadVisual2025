@@ -3,25 +3,23 @@
 
 class Jugador {
   constructor({ id, nombre, avatar }) {
-    this.id = id;                         // Identificador único del jugador
-    this.nombre = nombre;                 // Nombre visible
-    this.avatar = avatar ||               // Imagen del jugador (por defecto usa pravatar)
-      `https://i.pravatar.cc/150?img=${10 + id}`;
+    this.id = id;                         
+    this.nombre = nombre;                 
+    this.avatar = avatar ||               
+      `https://i.pravatar.cc/150?img=${id}`;
 
-    this.puntos = 0;                      // Puntos acumulados por tiradas
-    this.tiradas = 0;                     // Número de tiradas realizadas
-    this.rondasGanadas = 0;               // Rondas ganadas
-    this.ultimoResultado = null;          // Última tirada en la ronda actual
+    this.puntos = 0;                      
+    this.tiradas = 0;                     
+    this.rondasGanadas = 0;               
+    this.ultimoResultado = null;         
   }
 
-  // Registra una tirada: guarda resultado, suma puntos y aumenta contador
   registrarTirada(valor) {
     this.ultimoResultado = valor;
     this.puntos += valor;
     this.tiradas += 1;
   }
 
-  // Suma una ronda ganada
   sumarRonda() {
     this.rondasGanadas += 1;
   }

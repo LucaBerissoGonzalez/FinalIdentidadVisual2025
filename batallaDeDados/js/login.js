@@ -3,7 +3,7 @@
 
 (function () {
   const form = document.getElementById('loginForm');
-  if (!form) return; // Si no existe el formulario, no hace nada
+  if (!form) return; 
 
   form.addEventListener('submit', (e) => {
     e.preventDefault(); // Evita que recargue la página
@@ -29,7 +29,7 @@
       document.getElementById('player2').classList.remove('is-invalid');
     }
 
-    if (!valid) return; // Si hubo errores, no continúa
+    if (!valid) return; 
 
     // Crea el estado inicial para iniciar la partida
     const initialState = {

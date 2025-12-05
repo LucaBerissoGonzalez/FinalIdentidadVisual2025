@@ -271,16 +271,10 @@
     }
   }
 
-  // Primer render de UI
-  updateUI();
-
-  // Guardado automático
-  setInterval(() => saveState(partida.toJSON()), 2000);
-
-  // Si ya estaba terminada desde almacenamiento
   if (partida.isGameOver()) {
     partida.gameOver = true;
-    updateUI();
   }
+
+  updateUI();
 
 })();
